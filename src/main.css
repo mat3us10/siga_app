@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*GERAL*/
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body,html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00933C;
+    margin-bottom: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00933C;
+}
+
+li {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+li:hover {
+    color: white;
+    background-color: #2a2a2a;
+    transition-duration: 0.1s;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: 32vw;
+    height: 50vh;
+}
+
+a {
+    color: black;
+}
+
+/* LOGIN */
+
+.logo {
+    width: 25vw;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 25vw;
+    height: 8vh;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    border: 2px solid #f7f7f7;
+    transition-duration: 0.2s;
+}
+
+input:hover {
+    border: 2px solid #00933C;
+    transition-duration: 0.2s;
+}
+
+.enviar {
+    width: 10vw;
+    background-color: #00933C;
+    color: white;
+    cursor: pointer;
+}
+
+.logado {
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.15s;
+}
+
+
+.p_logado {
+    color: white;
+    background-color: #00933C;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.p_logado:hover {
+    color: white;
+    background-color: #2a2a2a;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+/* ASSOCIADOS */
+
+.container_associado {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: 100vw;
+    height: 50vh;
+}
+
+.titulo {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    color: #00933C;
+}
+
+.associado {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #00933C;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.associado_dados {
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+.nome:hover {
+    background-color: #00933C;
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
+    transition-duration: 0.2s;
+}
+
+.data:hover {
+    background-color: #FB7676;
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
+    transition-duration: 0.2s;
+}
+
+.status:hover {
+    background-color: #00933C;
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
+    transition-duration: 0.2s;
+}
+
+/* ESTABELECIMENTOS */
+
+.container_estabelecimento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+.estabelecimentos {
+
+    border: 1px solid #00933C;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.estabelecimento_dados {
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* PRODUTOS */
+
+.container_produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00933C;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.produto_dados {
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.produto_img {
+    margin: 5px;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* MENSALIDADES */
+
+.container_mensalidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+.mensalidade {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00933C;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.mensalidade_dados {
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.nao_paga {
+    color: white;
+    background-color: rgb(196, 24, 44);
+    border: 1px solid white;
+}
+
+.paga {
+    color: white;
+    background-color: #00933C;
+}
+
+span {
+    color: #2a2a2a;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+
+/* VENDAS */
+
+.container_vendas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+.venda {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #00933C;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.venda_dados {
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* EVENTOS */
+
+.container_eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+.evento {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    align-items: center;
+    color: #00933C;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.evento_dados {
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.evento_img {
+    margin: 5px;
+    max-width:400px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* PROMOCAO DE EVENTO E TREINAMENTO */
+
+.container_promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    align-items: center;
+    color: #00933C;
+    border: 1px solid #00933C;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.promo_dados {
+    margin: 5px;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 5px;
+    width: 7vw;
+    height: 6vh;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    background: #00933C;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid #00933C;
+    color: #00933C;
+    transition-duration: 0.15s;
+}
